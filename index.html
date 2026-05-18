@@ -648,10 +648,6 @@
       <div class="story-photo-wrap">
         <img src="photo_story.jpeg" alt="Liliia & Illia" />
       </div>
-      <!-- Handwritten text sitting between the two photos -->
-      <div class="handwritten-overlay">
-        <p>when you find<br>your person<br>keep,<br>can't</p>
-      </div>
       <!-- Right: empty placeholder -->
       <div class="story-photo-empty"></div>
     </div>
@@ -664,7 +660,9 @@
     <h2 class="section-title">Civil Ceremony</h2>
     <div class="ceremony-grid">
       <div class="story-photo-empty" style="aspect-ratio:3/4;"></div>
-      <div class="story-photo-empty" style="aspect-ratio:3/4; background:#243f58;"></div>
+      <div style="background:var(--white);padding:10px 10px 36px;box-shadow:0 8px 32px rgba(0,0,0,0.35);">
+        <img src="photo_ceremony.jpeg" alt="Liliia & Illia" style="width:100%;aspect-ratio:3/4;object-fit:cover;display:block;filter:grayscale(100%);" />
+      </div>
     </div>
     <p class="ceremony-text">
       The civil ceremony will take place at 1:00 PM<br />
@@ -801,7 +799,7 @@
       </div>
       <div class="faq-item">
         <div class="faq-q">What's on the menu?</div>
-        <div class="faq-a">Still deciding!</div>
+        <div class="faq-a">You can look forward to modern Eastern European cuisine. The menu will include cold and hot appetizers, as well as desserts. At the restaurant, you will also be able to choose your first and main course. An open bar option will be available as well.</div>
       </div>
       <div class="faq-item">
         <div class="faq-q">What time should I arrive?</div>
@@ -835,30 +833,21 @@
     </div>
     <div class="more-grid">
       <div class="story-photo-empty" style="aspect-ratio:3/4;"></div>
-      <div class="story-photo-empty" style="aspect-ratio:3/4; background:#243f58;"></div>
+      <div style="background:var(--white);padding:10px 10px 36px;box-shadow:0 8px 32px rgba(0,0,0,0.35);">
+        <img src="photo_more.jpeg" alt="Liliia & Illia" style="width:100%;aspect-ratio:3/4;object-fit:cover;display:block;filter:grayscale(100%);" />
+      </div>
     </div>
   </div>
 </section>
 
 <!-- RSVP -->
 <section id="rsvp">
-  <div class="section-inner" style="max-width:560px;">
+  <div class="section-inner" style="max-width:560px; text-align:center;">
     <h2 class="section-title section-title-cream">RSVP</h2>
-    <p>Let us know if you'll be there</p>
-    <div class="rsvp-form">
-      <input type="text" placeholder="Your name" id="rsvp-name" />
-      <select id="rsvp-attend">
-        <option value="" disabled selected>Will you be attending?</option>
-        <option value="yes">Joyfully accepts</option>
-        <option value="no">Regretfully declines</option>
-      </select>
-      <input type="number" placeholder="Number of guests" id="rsvp-guests" min="1" max="10" />
-      <textarea placeholder="Dietary restrictions or a note for us…" id="rsvp-note"></textarea>
-      <button class="rsvp-submit" onclick="submitRsvp()">Send RSVP</button>
-    </div>
-    <div class="rsvp-success" id="rsvp-success">
-      Thank you — we can't wait to celebrate with you! ♥
-    </div>
+    <p style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(18px,3vw,22px);color:var(--navy);opacity:0.8;line-height:1.8;">
+      Please let us know if you will be there.<br />
+      We would love to have you celebrate with us.
+    </p>
   </div>
 </section>
 
