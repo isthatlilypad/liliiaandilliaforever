@@ -39,6 +39,7 @@
       padding: 18px 40px; gap: 40px;
       background: rgba(29, 59, 88, 0.96);
       backdrop-filter: blur(12px);
+      flex-wrap: nowrap;
     }
     nav a {
       color: rgba(255,255,255,0.8);
@@ -56,6 +57,7 @@
       font-weight: 400;
       letter-spacing: 0.05em;
       color: var(--white);
+      white-space: nowrap;
     }
 
     /* ─── HERO ─── */
@@ -294,7 +296,6 @@
       justify-content: space-between;
       flex-wrap: wrap;
       gap: 16px;
-      border-top: 1px solid rgba(255,255,255,0.15);
       padding-top: 28px;
     }
     .ceremony-details .info-block .label {
@@ -672,13 +673,25 @@
     </p>
     <div class="ceremony-details">
       <div class="info-block">
-        <span class="label">Date &amp; Time</span>
-        <span class="value">August 8th, 2026 · 1:00 PM</span>
+        <span class="label">Date</span>
+        <span class="value">August 8th, 2026</span>
       </div>
       <div class="info-block">
-        <span class="label">Location</span>
-        <span class="value">Młynarska 16, Warszawa</span>
+        <span class="label">Time</span>
+        <span class="value">1:00 PM</span>
       </div>
+      <div class="info-block">
+        <span class="label">Venue</span>
+        <span class="value">Urząd Stanu Cywilnego m.st. Warszawy</span>
+      </div>
+    </div>
+    <p style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:18px;color:rgba(255,255,255,0.6);margin: 20px 0 24px; text-align:center;">
+      Młynarska 16, Warszawa
+    </p>
+    <div style="text-align:center;">
+      <a style="display:inline-block;padding:12px 36px;border:1px solid rgba(255,255,255,0.5);color:rgba(255,255,255,0.8);font-family:'EB Garamond',serif;font-size:12px;letter-spacing:0.2em;text-transform:uppercase;text-decoration:none;transition:background 0.25s,color 0.25s;" href="https://maps.google.com/?q=Urząd+Stanu+Cywilnego+Młynarska+16+Warszawa" target="_blank" rel="noopener">
+        Open in Google Maps
+      </a>
     </div>
   </div>
 </section>
@@ -828,8 +841,8 @@
 <section id="more">
   <div class="section-inner">
     <div class="more-caption" style="margin-bottom:36px;">
-      <h2 class="section-title">More soon…</h2>
-      <p>keep checking in!</p>
+      <h2 class="section-title">Please let us know<br>if you will be there.</h2>
+      <p>We would love to have you celebrate with us.</p>
     </div>
     <div class="more-grid">
       <div class="story-photo-empty" style="aspect-ratio:3/4;"></div>
@@ -837,17 +850,6 @@
         <img src="photo_more.jpeg" alt="Liliia & Illia" style="width:100%;aspect-ratio:3/4;object-fit:cover;display:block;filter:grayscale(100%);" />
       </div>
     </div>
-  </div>
-</section>
-
-<!-- RSVP -->
-<section id="rsvp">
-  <div class="section-inner" style="max-width:560px; text-align:center;">
-    <h2 class="section-title section-title-cream">RSVP</h2>
-    <p style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(18px,3vw,22px);color:var(--navy);opacity:0.8;line-height:1.8;">
-      Please let us know if you will be there.<br />
-      We would love to have you celebrate with us.
-    </p>
   </div>
 </section>
 
